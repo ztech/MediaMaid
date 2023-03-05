@@ -1,0 +1,7 @@
+/.idea/
+.idea/
+.idea
+/storage/logs/*
+/storage/uploaded/*
+/public/storage
+/docs
