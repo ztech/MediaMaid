@@ -1,18 +1,17 @@
 package routers
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/http/controller/captcha"
-	"nasmaid/app/http/middleware/authorization"
-	"nasmaid/app/http/middleware/cors"
-	validatorFactory "nasmaid/app/http/validator/core/factory"
-	"nasmaid/app/utils/gin_release"
-	"net/http"
-
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/http/controller/captcha"
+	"mediamaid/app/http/middleware/authorization"
+	"mediamaid/app/http/middleware/cors"
+	validatorFactory "mediamaid/app/http/validator/core/factory"
+	"mediamaid/app/utils/gin_release"
+	"net/http"
 )
 
 // 该路由主要设置 后台管理系统等后端应用路由
@@ -21,11 +20,6 @@ func InitWebRouter() *gin.Engine {
 	var router *gin.Engine
 	// 非调试模式（生产模式） 日志写到日志文件
 	if variable.ConfigYml.GetBool("AppDebug") == false {
-
-		//1.gin自行记录接口访问日志，不需要nginx，如果开启以下3行，那么请屏蔽第 34 行代码
-		//gin.DisableConsoleColor()
-		//f, _ := os.Create(variable.BasePath + variable.ConfigYml.GetString("Logs.GinLogName"))
-		//gin.DefaultWriter = io.MultiWriter(f)
 
 		//【生产模式】
 		// 根据 gin 官方的说明：[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.

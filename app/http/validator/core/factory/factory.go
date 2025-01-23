@@ -1,12 +1,11 @@
 package factory
 
 import (
-	"nasmaid/app/core/container"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/http/validator/core/interf"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/core/container"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/http/validator/core/interf"
 )
 
 // 表单参数验证器工厂（请勿修改）

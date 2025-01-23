@@ -1,15 +1,14 @@
 package web
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/model"
-	"nasmaid/app/service/users/curd"
-	userstoken "nasmaid/app/service/users/token"
-	"nasmaid/app/utils/response"
-	"time"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/model"
+	"mediamaid/app/service/users/curd"
+	userstoken "mediamaid/app/service/users/token"
+	"mediamaid/app/utils/response"
+	"time"
 )
 
 type Users struct {

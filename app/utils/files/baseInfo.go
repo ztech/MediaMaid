@@ -1,9 +1,9 @@
 package files
 
 import (
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
 	"mime/multipart"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
 	"net/http"
 	"os"
 )

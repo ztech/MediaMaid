@@ -2,18 +2,17 @@ package test
 
 import (
 	"fmt"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/utils/rabbitmq/hello_world"
-	"nasmaid/app/utils/rabbitmq/publish_subscribe"
-	"nasmaid/app/utils/rabbitmq/routing"
-	"nasmaid/app/utils/rabbitmq/topics"
-	"nasmaid/app/utils/rabbitmq/work_queue"
-	_ "nasmaid/bootstrap"
+	amqp "github.com/rabbitmq/amqp091-go"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/utils/rabbitmq/hello_world"
+	"mediamaid/app/utils/rabbitmq/publish_subscribe"
+	"mediamaid/app/utils/rabbitmq/routing"
+	"mediamaid/app/utils/rabbitmq/topics"
+	"mediamaid/app/utils/rabbitmq/work_queue"
+	_ "mediamaid/bootstrap"
 	"os"
 	"strconv"
 	"testing"
-
-	amqp "github.com/rabbitmq/amqp091-go"
 )
 
 //  消息队列（rabbitmq）在线文档地址：https://www.yuque.com/xiaofensinixidaouxiang/bkfhct/tkcuc8

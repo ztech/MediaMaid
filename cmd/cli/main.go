@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "nasmaid/bootstrap"
-	cmd "nasmaid/command"
+	_ "mediamaid/bootstrap"
+	cmd "mediamaid/command"
 )
 
 // 开发非http接口类服务入口

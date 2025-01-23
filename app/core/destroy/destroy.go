@@ -1,14 +1,13 @@
 package destroy
 
 import (
-	"nasmaid/app/core/event_manage"
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
+	"go.uber.org/zap"
+	"mediamaid/app/core/event_manage"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
 	"os"
 	"os/signal"
 	"syscall"
-
-	"go.uber.org/zap"
 )
 
 func init() {

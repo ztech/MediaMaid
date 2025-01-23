@@ -1,17 +1,16 @@
 package yml_config
 
 import (
-	"log"
-	"nasmaid/app/core/container"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/yml_config/ymlconfig_interf"
-	"sync"
-	"time"
-
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
+	"mediamaid/app/core/container"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/yml_config/ymlconfig_interf"
+	"log"
+	"sync"
+	"time"
 )
 
 // 由于 vipver 包本身对于文件的变化事件有一个bug，相关事件会被回调两次

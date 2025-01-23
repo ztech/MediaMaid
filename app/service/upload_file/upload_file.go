@@ -3,15 +3,14 @@ package upload_file
 import (
 	"errors"
 	"fmt"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/md5_encrypt"
+	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/md5_encrypt"
 	"os"
 	"path"
 	"strings"
 	"time"
-
-	"github.com/gin-gonic/gin"
 )
 
 func Upload(context *gin.Context, savePath string) (r bool, finnalSavePath interface{}) {

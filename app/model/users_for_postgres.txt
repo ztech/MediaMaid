@@ -2,9 +2,9 @@ package model
 
 import (
 	"go.uber.org/zap"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/service/users/token_cache_redis"
-	"nasmaid/app/utils/md5_encrypt"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/service/users/token_cache_redis"
+	"mediamaid/app/utils/md5_encrypt"
 	"strconv"
 	"time"
 )

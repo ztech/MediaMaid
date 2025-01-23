@@ -1,15 +1,14 @@
 package upload_files
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/http/controller/web"
-	"nasmaid/app/utils/files"
-	"nasmaid/app/utils/response"
+	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/http/controller/web"
+	"mediamaid/app/utils/files"
+	"mediamaid/app/utils/response"
 	"strconv"
 	"strings"
-
-	"github.com/gin-gonic/gin"
 )
 
 type UpFiles struct {
@@ -24,6 +23,11 @@ func (u UpFiles) CheckParams(context *gin.Context) {
 		response.Fail(context, consts.FilesUploadFailCode, consts.FilesUploadFailMsg, err.Error())
 		return
 	}
+	if tmpFile.Size == 0 {
+		response.Fail(context, consts.FilesUploadMoreThanMaxSizeCode, consts.FilesUploadIsEmpty, "")
+		return
+	}
+
 	//超过系统设定的最大值：32M，tmpFile.Size 的单位是 bytes 和我们定义的文件单位M 比较，就需要将我们的单位*1024*1024(即2的20次方)，一步到位就是 << 20
 	sizeLimit := variable.ConfigYml.GetInt64("FileUploadSetting.Size")
 	if tmpFile.Size > sizeLimit<<20 {

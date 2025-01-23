@@ -1,11 +1,10 @@
 package routing
 
 import (
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/rabbitmq/error_record"
-	"time"
-
 	amqp "github.com/rabbitmq/amqp091-go"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/rabbitmq/error_record"
+	"time"
 )
 
 func CreateConsumer(options ...OptionsConsumer) (*consumer, error) {

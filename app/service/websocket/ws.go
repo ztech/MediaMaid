@@ -2,14 +2,13 @@ package websocket
 
 import (
 	"fmt"
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/websocket/core"
-
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 	"go.uber.org/zap"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/websocket/core"
 )
 
 /**
@@ -33,7 +32,7 @@ func (w *Ws) OnOpen(context *gin.Context) (*Ws, bool) {
 
 		// 成功上线以后，开发者可以基于客户端上线时携带的唯一参数(这里用token键表示)
 		// 在数据库查询更多的其他字段信息，直接追加在 Client 结构体上，方便后续使用
-		//client.ClientMoreParams.UserParams1 = "123"
+		//client.ClientMoreParams.UserParams1 = token
 		//client.ClientMoreParams.UserParams2 = "456"
 		//fmt.Printf("最终每一个客户端(client) 已有的参数：%+v\n", client)
 

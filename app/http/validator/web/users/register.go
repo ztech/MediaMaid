@@ -1,12 +1,11 @@
 package users
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/http/controller/web"
-	"nasmaid/app/http/validator/core/data_transfer"
-	"nasmaid/app/utils/response"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/http/controller/web"
+	"mediamaid/app/http/validator/core/data_transfer"
+	"mediamaid/app/utils/response"
 )
 
 // 验证器是本项目骨架的先锋队，必须发挥它的极致优势，具体参考地址：

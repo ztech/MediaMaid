@@ -1,12 +1,11 @@
 package model
 
 import (
-	"nasmaid/app/global/variable"
-	"nasmaid/app/service/users/token_cache_redis"
-	"nasmaid/app/utils/md5_encrypt"
-	"time"
-
 	"go.uber.org/zap"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/service/users/token_cache_redis"
+	"mediamaid/app/utils/md5_encrypt"
+	"time"
 )
 
 // 操作数据库喜欢使用gorm自带语法的开发者可以参考 GinSkeleton-Admin 系统相关代码

@@ -1,10 +1,9 @@
 package hello_world
 
 import (
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/rabbitmq/error_record"
-
 	amqp "github.com/rabbitmq/amqp091-go"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/rabbitmq/error_record"
 )
 
 // CreateProducer 创建一个生产者

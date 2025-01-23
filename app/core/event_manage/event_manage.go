@@ -1,8 +1,8 @@
 package event_manage
 
 import (
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
 	"strings"
 	"sync"
 )

@@ -8,7 +8,7 @@
 ### [GinSkeleton 新版在线文档](https://www.yuque.com/xiaofensinixidaouxiang/bkfhct/mar1g7)
 - 1.我们花费了极大的精力编写了非常完整、高质量的文档,初学者优先从如何使用学起, 成熟的开发者可以与我们一起研究 gin 内核源码,成为 gin 框架的高级开发.
 - 2.学习 GinSkeleton 您只需要关注主线即可,我们没有创造太多新的语法,只要您会使用 gin 就可以迅速上手 Ginskeleton .
-- 3. $\color{red}{QQ群：129885228}$
+- 3.<font color=#FF4500>QQ群：129885228 </font>
 
 [旧文档入口](./ReadMEBak.md)
 
@@ -23,11 +23,6 @@
 
 
 
-#### V 1.5.58  2022-12-20（最新版本）
-**BUG修复**
-- 1.如果redis服务端重启、客户端发生网络切换(从有线切换到wifi)，基于已有的连接池继续操作redis程序会报错.
-- 2.以上BUG由开发者(qq2423067094上报),再次感谢.
-
-
-### 感谢 jetbrains 为本项目提供的 goland 激活码
-![https://www.jetbrains.com/](https://www.ginskeleton.com/images/jetbrains.jpg)
+#### V 1.5.66  2025-01-11（最新版本）
+**更新**
+- 1.修复cli提供示例代码中，全局变量调用顺序存在的bug. 

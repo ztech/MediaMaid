@@ -1,9 +1,9 @@
 package snow_flake
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/snow_flake/snowflake_interf"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/snow_flake/snowflake_interf"
 	"sync"
 	"time"
 )

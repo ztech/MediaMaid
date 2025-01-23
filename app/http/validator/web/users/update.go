@@ -1,12 +1,11 @@
 package users
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/http/controller/web"
-	"nasmaid/app/http/validator/core/data_transfer"
-	"nasmaid/app/utils/response"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/http/controller/web"
+	"mediamaid/app/http/validator/core/data_transfer"
+	"mediamaid/app/utils/response"
 )
 
 type Update struct {

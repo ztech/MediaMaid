@@ -1,10 +1,9 @@
 package cur_userinfo
 
 import (
-	"nasmaid/app/global/variable"
-	"nasmaid/app/http/middleware/my_jwt"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/http/middleware/my_jwt"
 )
 
 // GetCurrentUserId 获取当前用户的id

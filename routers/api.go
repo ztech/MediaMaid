@@ -1,16 +1,15 @@
 package routers
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/http/middleware/cors"
-	validatorFactory "nasmaid/app/http/validator/core/factory"
-	"nasmaid/app/utils/gin_release"
-	"net/http"
-
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/http/middleware/cors"
+	validatorFactory "mediamaid/app/http/validator/core/factory"
+	"mediamaid/app/utils/gin_release"
+	"net/http"
 )
 
 // 该路由主要设置门户类网站等前台路由
@@ -19,11 +18,6 @@ func InitApiRouter() *gin.Engine {
 	var router *gin.Engine
 	// 非调试模式（生产模式） 日志写到日志文件
 	if variable.ConfigYml.GetBool("AppDebug") == false {
-		//1.gin自行记录接口访问日志，不需要nginx，如果开启以下3行，那么请屏蔽第 34 行代码
-		//gin.DisableConsoleColor()
-		//f, _ := os.Create(variable.BasePath + variable.ConfigYml.GetString("Logs.GinLogName"))
-		//gin.DefaultWriter = io.MultiWriter(f)
-
 		//【生产模式】
 		// 根据 gin 官方的说明：[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
 		// 如果部署到生产环境，请使用以下模式：
@@ -55,8 +49,8 @@ func InitApiRouter() *gin.Engine {
 	})
 
 	//处理静态资源（不建议gin框架处理静态资源，参见 Public/readme.md 说明 ）
-	router.Static("/public", "./public")             //  定义静态资源路由与实际目录映射关系
-	router.StaticFile("/abcd", "./public/readme.md") // 可以根据文件名绑定需要返回的文件名
+	router.Static("/public", "./public") //  定义静态资源路由与实际目录映射关系
+	//router.StaticFile("/abcd", "./public/readme.md") // 可以根据文件名绑定需要返回的文件名
 
 	//  创建一个门户类接口路由组
 	vApi := router.Group("/api/v1/")

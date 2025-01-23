@@ -1,9 +1,9 @@
 package container
 
 import (
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
 	"log"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
 	"strings"
 	"sync"
 )

@@ -1,11 +1,10 @@
 package test
 
 import (
-	"nasmaid/app/global/variable"
-	_ "nasmaid/bootstrap" //  为了保证单元测试与正常启动效果一致，记得引入该包
-	"testing"
-
 	"github.com/qifengzhang007/goCurl"
+	"mediamaid/app/global/variable"
+	_ "mediamaid/bootstrap" //  为了保证单元测试与正常启动效果一致，记得引入该包
+	"testing"
 )
 
 // goCurl 更详细的使用文档 https://gitee.com/daitougege/goCurl

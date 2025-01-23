@@ -2,11 +2,10 @@ package model
 
 import (
 	"fmt"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"strings"
-
 	"gorm.io/gorm"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"strings"
 )
 
 type BaseModel struct {

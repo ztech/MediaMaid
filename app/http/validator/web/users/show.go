@@ -1,13 +1,12 @@
 package users
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/http/controller/web"
-	common_data_type "nasmaid/app/http/validator/common/data_type"
-	"nasmaid/app/http/validator/core/data_transfer"
-	"nasmaid/app/utils/response"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/http/controller/web"
+	common_data_type "mediamaid/app/http/validator/common/data_type"
+	"mediamaid/app/http/validator/core/data_transfer"
+	"mediamaid/app/utils/response"
 )
 
 type Show struct {

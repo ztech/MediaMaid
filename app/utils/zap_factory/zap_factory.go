@@ -1,13 +1,12 @@
 package zap_factory
 
 import (
-	"log"
-	"nasmaid/app/global/variable"
-	"time"
-
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+	"mediamaid/app/global/variable"
+	"log"
+	"time"
 )
 
 func CreateZapFactory(entry func(zapcore.Entry) error) *zap.Logger {
@@ -56,7 +55,7 @@ func CreateZapFactory(entry func(zapcore.Entry) error) *zap.Logger {
 	}
 
 	//写入器
-	fileName := variable.BasePath + variable.ConfigYml.GetString("Logs.nasmaidLogName")
+	fileName := variable.BasePath + variable.ConfigYml.GetString("Logs.mediamaidLogName")
 	lumberJackLogger := &lumberjack.Logger{
 		Filename:   fileName,                                     //日志文件的位置
 		MaxSize:    variable.ConfigYml.GetInt("Logs.MaxSize"),    //在进行切割之前，日志文件的最大大小（以MB为单位）

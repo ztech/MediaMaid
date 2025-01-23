@@ -2,15 +2,14 @@ package token
 
 import (
 	"errors"
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/http/middleware/my_jwt"
-	"nasmaid/app/model"
-	"nasmaid/app/service/users/token_cache_redis"
-	"time"
-
 	"github.com/dgrijalva/jwt-go"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/http/middleware/my_jwt"
+	"mediamaid/app/model"
+	"mediamaid/app/service/users/token_cache_redis"
+	"time"
 )
 
 // CreateUserFactory 创建 userToken 工厂

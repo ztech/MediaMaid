@@ -1,13 +1,12 @@
 package websocket
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	controllerWs "nasmaid/app/http/controller/websocket"
-	"nasmaid/app/http/validator/core/data_transfer"
-
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	controllerWs "mediamaid/app/http/controller/websocket"
+	"mediamaid/app/http/validator/core/data_transfer"
 )
 
 type Connect struct {

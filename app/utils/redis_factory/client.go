@@ -1,15 +1,14 @@
 package redis_factory
 
 import (
-	"nasmaid/app/core/event_manage"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/yml_config"
-	"nasmaid/app/utils/yml_config/ymlconfig_interf"
-	"time"
-
 	"github.com/gomodule/redigo/redis"
 	"go.uber.org/zap"
+	"mediamaid/app/core/event_manage"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/yml_config"
+	"mediamaid/app/utils/yml_config/ymlconfig_interf"
+	"time"
 )
 
 var redisPool *redis.Pool

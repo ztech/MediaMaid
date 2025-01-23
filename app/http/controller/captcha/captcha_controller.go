@@ -2,15 +2,14 @@ package captcha
 
 import (
 	"bytes"
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/response"
+	"github.com/dchest/captcha"
+	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/response"
 	"net/http"
 	"path"
 	"time"
-
-	"github.com/dchest/captcha"
-	"github.com/gin-gonic/gin"
 )
 
 type Captcha struct{}

@@ -1,13 +1,12 @@
 package gorm_v2
 
 import (
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
+	"gorm.io/gorm"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
 	"reflect"
 	"strings"
 	"time"
-
-	"gorm.io/gorm"
 )
 
 // 这里的函数都是gorm的hook函数，拦截一些官方我们认为不合格的操作行为，提升项目整体的完美性

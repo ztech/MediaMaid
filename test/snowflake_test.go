@@ -1,8 +1,8 @@
 package test
 
 import (
-	"nasmaid/app/global/variable"
-	_ "nasmaid/bootstrap"
+	"mediamaid/app/global/variable"
+	_ "mediamaid/bootstrap"
 	"sync"
 	"testing"
 )

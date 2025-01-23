@@ -1,19 +1,19 @@
 package bootstrap
 
 import (
+	_ "mediamaid/app/core/destroy" // 监听程序退出信号，用于资源的释放
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/http/validator/common/register_validator"
+	"mediamaid/app/service/sys_log_hook"
+	"mediamaid/app/utils/casbin_v2"
+	"mediamaid/app/utils/gorm_v2"
+	"mediamaid/app/utils/snow_flake"
+	"mediamaid/app/utils/validator_translation"
+	"mediamaid/app/utils/websocket/core"
+	"mediamaid/app/utils/yml_config"
+	"mediamaid/app/utils/zap_factory"
 	"log"
-	_ "nasmaid/app/core/destroy" // 监听程序退出信号，用于资源的释放
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/http/validator/common/register_validator"
-	"nasmaid/app/service/sys_log_hook"
-	"nasmaid/app/utils/casbin_v2"
-	"nasmaid/app/utils/gorm_v2"
-	"nasmaid/app/utils/snow_flake"
-	"nasmaid/app/utils/validator_translation"
-	"nasmaid/app/utils/websocket/core"
-	"nasmaid/app/utils/yml_config"
-	"nasmaid/app/utils/zap_factory"
 	"os"
 )
 

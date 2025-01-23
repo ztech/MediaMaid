@@ -1,9 +1,8 @@
 package websocket
 
 import (
-	serviceWs "nasmaid/app/service/websocket"
-
 	"github.com/gin-gonic/gin"
+	serviceWs "mediamaid/app/service/websocket"
 )
 
 /**

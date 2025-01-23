@@ -2,14 +2,13 @@ package data_transfer
 
 import (
 	"encoding/json"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/http/validator/core/interf"
-	"time"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/http/validator/core/interf"
+	"time"
 )
 
-// 将验证器成员(字段)绑定到数据传输到上下文，方便控制器获取
+// 将验证器成员(字段)绑定到数据传输上下文，方便控制器获取
 /**
 本函数参数说明：
 validatorInterface 实现了验证器接口的结构体

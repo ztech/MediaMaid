@@ -2,9 +2,9 @@ package test
 
 import (
 	"fmt"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/gorm_v2"
-	_ "nasmaid/bootstrap"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/gorm_v2"
+	_ "mediamaid/bootstrap"
 	"sync"
 	"testing"
 	"time"

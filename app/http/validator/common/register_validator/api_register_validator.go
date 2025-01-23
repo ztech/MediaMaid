@@ -1,9 +1,9 @@
 package register_validator
 
 import (
-	"nasmaid/app/core/container"
-	"nasmaid/app/global/consts"
-	"nasmaid/app/http/validator/api/home"
+	"mediamaid/app/core/container"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/http/validator/api/home"
 )
 
 // 各个业务模块验证器必须进行注册（初始化），程序启动时会自动加载到容器

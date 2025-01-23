@@ -2,11 +2,10 @@ package cmd
 
 import (
 	"fmt"
-	"nasmaid/command/demo"
-	"nasmaid/command/demo_simple"
-	"os"
-
 	"github.com/spf13/cobra"
+	"mediamaid/command/demo"
+	"mediamaid/command/demo_simple"
+	"os"
 )
 
 // cli 命令基于 https://github.com/spf13/cobra 封装

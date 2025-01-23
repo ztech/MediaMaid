@@ -1,11 +1,11 @@
--- 创建数据库,例如：  db_nasmaid
+-- 创建数据库,例如：  db_mediamaid
 USE [master]
-IF NOT EXISTS(SELECT 1 FROM sysdatabases WHERE NAME=N'db_nasmaid')
+IF NOT EXISTS(SELECT 1 FROM sysdatabases WHERE NAME=N'db_mediamaid')
 BEGIN
-CREATE DATABASE db_nasmaid
+CREATE DATABASE db_mediamaid
 END
 GO
-use db_nasmaid ;
+use db_mediamaid ;
 --  创建用户表
 CREATE TABLE [dbo].[tb_users](
     [id] [int] IDENTITY(1,1) NOT NULL,

@@ -1,14 +1,13 @@
 package authorization
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	userstoken "nasmaid/app/service/users/token"
-	"nasmaid/app/utils/response"
-	"strings"
-
 	"github.com/dchest/captcha"
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	userstoken "mediamaid/app/service/users/token"
+	"mediamaid/app/utils/response"
+	"strings"
 )
 
 type HeaderParams struct {

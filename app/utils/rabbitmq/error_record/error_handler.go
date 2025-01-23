@@ -1,6 +1,6 @@
 package error_record
 
-import "nasmaid/app/global/variable"
+import "mediamaid/app/global/variable"
 
 // ErrorDeal 记录错误
 func ErrorDeal(err error) error {

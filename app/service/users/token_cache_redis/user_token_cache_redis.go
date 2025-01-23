@@ -1,14 +1,13 @@
 package token_cache_redis
 
 import (
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/md5_encrypt"
-	"nasmaid/app/utils/redis_factory"
+	"go.uber.org/zap"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/md5_encrypt"
+	"mediamaid/app/utils/redis_factory"
 	"strconv"
 	"strings"
 	"time"
-
-	"go.uber.org/zap"
 )
 
 func CreateUsersTokenCacheFactory(userId int64) *userTokenCacheRedis {

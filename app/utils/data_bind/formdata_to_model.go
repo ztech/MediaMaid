@@ -2,10 +2,9 @@ package data_bind
 
 import (
 	"errors"
-	"nasmaid/app/global/consts"
-	"reflect"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"reflect"
 )
 
 const (

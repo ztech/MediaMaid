@@ -2,15 +2,14 @@ package casbin_v2
 
 import (
 	"errors"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/global/variable"
-	"strings"
-	"time"
-
 	"github.com/casbin/casbin/v2"
 	"github.com/casbin/casbin/v2/model"
 	gormadapter "github.com/casbin/gorm-adapter/v3"
 	"gorm.io/gorm"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/global/variable"
+	"strings"
+	"time"
 )
 
 //创建 casbin Enforcer(执行器)

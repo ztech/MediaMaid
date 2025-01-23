@@ -1,16 +1,15 @@
 package variable
 
 import (
-	"log"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/utils/snow_flake/snowflake_interf"
-	"nasmaid/app/utils/yml_config/ymlconfig_interf"
-	"os"
-	"strings"
-
 	"github.com/casbin/casbin/v2"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/utils/snow_flake/snowflake_interf"
+	"mediamaid/app/utils/yml_config/ymlconfig_interf"
+	"log"
+	"os"
+	"strings"
 )
 
 // ginskeleton 封装的全局变量全部支持并发安全，请放心使用即可

@@ -1,14 +1,13 @@
 package response
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/my_errors"
-	"nasmaid/app/utils/validator_translation"
-	"net/http"
-	"strings"
-
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/my_errors"
+	"mediamaid/app/utils/validator_translation"
+	"net/http"
+	"strings"
 )
 
 func ReturnJson(Context *gin.Context, httpCode int, dataCode int, msg string, data interface{}) {

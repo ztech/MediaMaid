@@ -1,10 +1,9 @@
 package users
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
 )
 
 // 模拟Aop 实现对某个控制器函数的前置和后置回调

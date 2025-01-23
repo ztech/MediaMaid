@@ -3,13 +3,12 @@ package gin_release
 import (
 	"errors"
 	"fmt"
-	"io/ioutil"
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/response"
-
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/response"
+	"io/ioutil"
 )
 
 // ReleaseRouter 根据 gin 路由包官方的建议，gin 路由引擎如果在生产模式使用，官方建议设置为 release 模式
@@ -36,12 +35,12 @@ func CustomRecovery() gin.HandlerFunc {
 	})
 }
 
-//PanicExceptionRecord  panic等异常记录
+// PanicExceptionRecord  panic等异常记录
 type PanicExceptionRecord struct{}
 
 func (p *PanicExceptionRecord) Write(b []byte) (n int, err error) {
 	errStr := string(b)
 	err = errors.New(errStr)
-	variable.ZapLog.Error(consts.ServerOccurredErrorMsg, zap.String("msg", errStr))
+	variable.ZapLog.Error(consts.ServerOccurredErrorMsg, zap.String("errStrace", errStr))
 	return len(errStr), err
 }

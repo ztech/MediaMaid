@@ -1,12 +1,11 @@
 package web
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/service/upload_file"
-	"nasmaid/app/utils/response"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/service/upload_file"
+	"mediamaid/app/utils/response"
 )
 
 type Upload struct {

@@ -1,8 +1,8 @@
 package curd
 
 import (
-	"nasmaid/app/model"
-	"nasmaid/app/utils/md5_encrypt"
+	"mediamaid/app/model"
+	"mediamaid/app/utils/md5_encrypt"
 )
 
 func CreateUserCurdFactory() *UsersCurd {

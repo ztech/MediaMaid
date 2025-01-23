@@ -1,12 +1,11 @@
 package users
 
 import (
-	"nasmaid/app/global/consts"
-	"nasmaid/app/http/controller/web"
-	"nasmaid/app/utils/response"
-	"strings"
-
 	"github.com/gin-gonic/gin"
+	"mediamaid/app/global/consts"
+	"mediamaid/app/http/controller/web"
+	"mediamaid/app/utils/response"
+	"strings"
 )
 
 type RefreshToken struct {

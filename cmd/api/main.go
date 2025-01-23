@@ -1,9 +1,9 @@
 package main
 
 import (
-	"nasmaid/app/global/variable"
-	_ "nasmaid/bootstrap"
-	"nasmaid/routers"
+	"mediamaid/app/global/variable"
+	_ "mediamaid/bootstrap"
+	"mediamaid/routers"
 )
 
 // 这里可以存放门户类网站入口

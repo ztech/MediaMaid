@@ -1,9 +1,9 @@
 package main
 
 import (
-	"nasmaid/app/global/variable"
-	_ "nasmaid/bootstrap"
-	"nasmaid/routers"
+	"mediamaid/app/global/variable"
+	_ "mediamaid/bootstrap"
+	"mediamaid/routers"
 )
 
 // 这里可以存放后端路由（例如后台管理系统）

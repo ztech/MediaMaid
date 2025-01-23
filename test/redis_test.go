@@ -2,13 +2,12 @@ package test
 
 import (
 	"fmt"
-	"nasmaid/app/global/variable"
-	"nasmaid/app/utils/redis_factory"
-	_ "nasmaid/bootstrap"
+	"go.uber.org/zap"
+	"mediamaid/app/global/variable"
+	"mediamaid/app/utils/redis_factory"
+	_ "mediamaid/bootstrap"
 	"testing"
 	"time"
-
-	"go.uber.org/zap"
 )
 
 //  普通的key  value
